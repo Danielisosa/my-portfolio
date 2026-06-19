@@ -1,0 +1,173 @@
+ <section id="proyectos" class="py-24 bg-slate-950 relative overflow-hidden">
+  
+      <div class="absolute top-1/2 left-0 w-72 h-72 bg-fuchsia-600/5 rounded-full blur-3xl"></div>
+
+      <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Encabezado de Sección -->
+        <div class="mb-16 space-y-4 text-center lg:text-left">
+          <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+            Proyectos <span class="text-fuchsia-400">Destacados</span>
+          </h2>
+          <div class="h-1.5 w-20 bg-gradient-to-r from-fuchsia-500 to-purple-600 rounded-full mx-auto lg:mx-0"></div>
+          <p class="text-slate-400 max-w-2xl">
+            Una muestra de ingeniería aplicada, donde el rendimiento y la calidad del código son la prioridad absoluta.
+          </p>
+        </div>
+
+        <!-- Grid de Proyectos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+          <!-- PROYECTO 1: DASHSTORE (ANTES TESLO SHOP) -->
+          <article class="group relative bg-slate-900/40 border border-white/5 rounded-3xl overflow-hidden hover:border-fuchsia-500/30 transition-all duration-500">
+            <!-- Imagen/Overlay del Proyecto -->
+            <div class="relative h-64 overflow-hidden bg-slate-900">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10"></div>
+
+              <!-- Imagen Real con Fallback -->
+              <img
+               src="images/dashstore.png"
+                alt="DashStore E-commerce Dashboard"
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-60 group-hover:opacity-80"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+
+              <!-- Fallback visual (SVG) si no encuentra la imagen local -->
+              <div class="hidden absolute inset-0 flex items-center justify-center text-fuchsia-500/10 bg-slate-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+              </div>
+
+              <!-- Badges Superiores -->
+              <div class="absolute top-4 left-4 z-20 flex gap-2">
+                <span class="px-3 py-1 bg-fuchsia-500/10 border border-fuchsia-500/20 rounded-lg text-fuchsia-400 text-[10px] font-bold uppercase tracking-widest backdrop-blur-md">
+                  CRUD & DASHBOARD
+                </span>
+                <span class="px-3 py-1 bg-slate-950/50 border border-white/10 rounded-lg text-slate-300 text-[10px] font-bold uppercase tracking-widest backdrop-blur-md">
+                  REACTIVE INVENTORY
+                </span>
+              </div>
+            </div>
+
+            <!-- Contenido de la Card -->
+            <div class="p-8 space-y-6">
+              <div class="space-y-2">
+                <h3 class="text-2xl font-bold text-white group-hover:text-fuchsia-400 transition-colors">DashStore</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                  Panel administrativo de e-commerce enfocado en la gestión de inventario de prendas. Implementa flujos reactivos con <span class="text-white">Signals</span> para listar catálogo, visualizar detalles detallados de productos y realizar operaciones CRUD completas (creación y edición).
+                </p>
+              </div>
+
+              <!-- Tags Técnicos -->
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-slate-800 text-slate-400 text-[11px] rounded-lg border border-white/5 font-medium">Angular 21</span>
+                <span class="px-2.5 py-1 bg-slate-800 text-slate-400 text-[11px] rounded-lg border border-white/5 font-medium">Signals</span>
+                <span class="px-2.5 py-1 bg-slate-800 text-slate-400 text-[11px] rounded-lg border border-white/5 font-medium">Tailwind CSS</span>
+                <span class="px-2.5 py-1 bg-slate-800 text-slate-400 text-[11px] rounded-lg border border-white/5 font-medium">CRUD REST API</span>
+              </div>
+
+              <!-- Métricas sutiles -->
+              <div class="flex items-center gap-6 py-4 border-y border-white/5">
+                <div class="flex items-center gap-2">
+                  <span class="flex h-2.5 w-2.5 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                  </span>
+                  <span class="text-xs font-mono text-slate-300">Perf: 98/100</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="w-2.5 h-2.5 rounded-full bg-emerald-500"></div>
+                  <span class="text-xs font-mono text-slate-300">Clean Code SOLID</span>
+                </div>
+              </div>
+
+              <!-- Botones de Acción -->
+              <div class="flex gap-4 pt-2">
+                <a href="https://dashstore2.netlify.app/" class="flex-1 text-center py-3 bg-fuchsia-600 hover:bg-fuchsia-500 text-white text-xs font-bold rounded-xl transition-all shadow-lg shadow-fuchsia-600/10 hover:shadow-fuchsia-600/25">
+                  Demo en Vivo
+                </a>
+                <a href="https://github.com/Danielisosa/dashstore-angular" class="flex-1 text-center py-3 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl transition-all border border-white/5">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYECTO 2: POKÉAPI PRO -->
+          <article class="group relative bg-slate-900/40 border border-white/5 rounded-3xl overflow-hidden hover:border-purple-500/30 transition-all duration-500">
+            <div class="relative h-64 overflow-hidden bg-slate-800">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10"></div>
+
+              <!-- Imagen Real con Fallback -->
+              <img
+                src="images/pokeapi.png"
+                alt="PokéAPI Pro App"
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-60 group-hover:opacity-80"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+
+              <!-- Fallback visual (SVG) si no encuentra la imagen local -->
+              <div class="hidden absolute inset-0 flex items-center justify-center text-purple-500/20 bg-slate-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+
+              <!-- Badges Superiores -->
+              <div class="absolute top-4 left-4 z-20 flex gap-2">
+                <span class="px-3 py-1 bg-purple-500/10 border border-purple-500/20 rounded-lg text-purple-400 text-[10px] font-bold uppercase tracking-widest backdrop-blur-md">
+                  ENGINEERING
+                </span>
+                <span class="px-3 py-1 bg-slate-950/50 border border-white/10 rounded-lg text-slate-300 text-[10px] font-bold uppercase tracking-widest backdrop-blur-md">
+                  SSR + TESTING
+                </span>
+              </div>
+            </div>
+
+            <div class="p-8 space-y-6">
+              <div class="space-y-2">
+                <h3 class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors">PokéAPI Pro</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                  Explorador avanzado optimizado con <span class="text-white">Server-Side Rendering (SSR)</span> para un SEO perfecto y carga instantánea. Incluye cobertura de pruebas unitarias al 100% con Vitest.
+                </p>
+              </div>
+
+              <!-- Tags Técnicos -->
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-slate-800 text-slate-400 text-[11px] rounded-lg border border-white/5 font-medium">Angular 21</span>
+                <span class="px-2.5 py-1 bg-slate-800 text-slate-400 text-[11px] rounded-lg border border-white/5 font-medium">SSR</span>
+                <span class="px-2.5 py-1 bg-slate-800 text-slate-400 text-[11px] rounded-lg border border-white/5 font-medium">Vitest</span>
+                <span class="px-2.5 py-1 bg-slate-800 text-slate-400 text-[11px] rounded-lg border border-white/5 font-medium">Hydration</span>
+              </div>
+
+              <!-- Métricas sutiles -->
+              <div class="flex items-center gap-6 py-4 border-y border-white/5">
+                <div class="flex items-center gap-2">
+                  <span class="flex h-2.5 w-2.5 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                  </span>
+                  <span class="text-xs font-mono text-slate-300">Coverage: 87%</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="w-2.5 h-2.5 rounded-full bg-emerald-500"></div>
+                  <span class="text-xs font-mono text-slate-300">SEO Optimized</span>
+                </div>
+              </div>
+
+              <!-- Botones de Acción -->
+              <div class="flex gap-4 pt-2">
+                <a href="https://pokemons-ssr-dash.netlify.app/about" class="flex-1 text-center py-3 bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold rounded-xl transition-all shadow-lg shadow-purple-600/10 hover:shadow-purple-600/25">
+                  Demo en Vivo
+                </a>
+                <a href="https://github.com/Danielisosa/Pokemon-ssr" class="flex-1 text-center py-3 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl transition-all border border-white/5">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>

@@ -1,0 +1,107 @@
+<section id="sobre-mi" class="py-24 bg-slate-950 relative overflow-hidden border-t border-white/5">
+      <!-- Efecto de luz de fondo flotante y decorativo (Glow Synthwave) -->
+      <div class="absolute bottom-1/4 right-0 w-96 h-96 bg-purple-600/5 rounded-full blur-3xl -z-10 animate-pulse-slow"></div>
+      <div class="absolute top-1/4 left-0 w-96 h-96 bg-fuchsia-600/5 rounded-full blur-3xl -z-10 animate-pulse-slow"></div>
+
+      <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Grid Principal (Estructura de Dos Columnas) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
+          <!-- COLUMNA IZQUIERDA: HISTORIA Y VALORES (COL 6) -->
+          <div class="lg:col-span-6 space-y-8">
+            <div class="space-y-4">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-semibold tracking-wide text-purple-300">
+                MI TRAYECTORIA
+              </div>
+              <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                Sobre <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 via-purple-400 to-violet-400">Mí</span>
+              </h2>
+              <div class="h-1.5 w-16 bg-gradient-to-r from-fuchsia-500 to-purple-600 rounded-full"></div>
+            </div>
+
+            <div class="space-y-6 text-slate-300 leading-relaxed text-base">
+              <p>
+                Mi trayectoria en el desarrollo de software abarca más de <strong class="text-white">3 años y medio</strong> de experiencia real, donde di mis primeros pasos y me consolidé trabajando en entornos corporativos utilizando <strong class="text-purple-300">AngularJS</strong>. Esta base me otorgó un profundo entendimiento de la arquitectura de componentes y la manipulación del DOM.
+              </p>
+              <p>
+                Actualmente, canalizo mi curiosidad constante hacia la especialización en el ecosistema moderno de <strong class="text-white">Angular (v19/v21)</strong>, adoptando con entusiasmo características avanzadas como <strong class="text-fuchsia-400">Signals y Server-Side Rendering (SSR)</strong> para construir la próxima generación de aplicaciones web rápidas, optimizadas y reactivas.
+              </p>
+              <p>
+                Escribo código enfocado en la mantenibilidad bajo principios <strong class="text-white">SOLID</strong>, integrando herramientas de automatización y despliegue como Git y entornos contenerizados básicos con Docker, facilitando una colaboración fluida dentro del equipo de ingeniería.
+              </p>
+            </div>
+
+            <!-- Mini Grid de Hitos Técnicos Animados -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+              <div class="group p-5 bg-slate-900/20 border border-white/5 rounded-2xl space-y-3 hover:border-fuchsia-500/30 hover:bg-slate-900/40 transition-all duration-300">
+                <div class="text-fuchsia-400 group-hover:scale-110 transition-transform duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                </div>
+                <h4 class="font-bold text-white text-sm">Clean Code & SOLID</h4>
+                <p class="text-xs text-slate-400">Estructuro código modular, auto-explicativo y altamente legible para asegurar la escalabilidad.</p>
+              </div>
+
+              <div class="group p-5 bg-slate-900/20 border border-white/5 rounded-2xl space-y-3 hover:border-purple-500/30 hover:bg-slate-900/40 transition-all duration-300">
+                <div class="text-purple-400 group-hover:scale-110 transition-transform duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h4 class="font-bold text-white text-sm">Evolución de Stack</h4>
+                <p class="text-xs text-slate-400">Capacidad comprobada de adaptabilidad técnica, migrando de AngularJS a Angular moderno.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- COLUMNA DERECHA: SKILLS INTERACTIVOS (COL 6) -->
+          <div class="lg:col-span-6 space-y-8">
+            <div class="space-y-2 text-center lg:text-left">
+              <h3 class="text-xl font-bold text-white">Stack de Especialización</h3>
+              <p class="text-sm text-slate-400">Tecnologías divididas estratégicamente según mi nivel de dominio y especialización:</p>
+            </div>
+
+            <!-- Contenedor de Categorías de Skills con Animación -->
+            <div class="space-y-6">
+              @for (cat of skillCategories(); track cat.title) {
+                <div [class]="'group relative bg-slate-900/20 border border-white/5 rounded-3xl p-6 transition-all duration-500 hover:border-' + cat.colorClass + '-500/40 ' + cat.glowShadow">
+
+                  <div class="relative z-10 space-y-4">
+                    <!-- Título de Categoría e Icono Animado -->
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center gap-3">
+                        <div [class]="'p-2 rounded-xl bg-slate-950 border border-white/5 text-' + cat.colorClass + '-400 group-hover:scale-110 transition-transform duration-300'">
+                          <span [innerHTML]="cat.icon"></span>
+                        </div>
+                        <h4 class="font-bold text-white text-base">{{ cat.title }}</h4>
+                      </div>
+
+                      <!-- Indicador de Status LED Synthwave -->
+                      <span class="flex h-2 w-2 relative">
+                        <span [class]="'animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 bg-' + cat.colorClass + '-400'"></span>
+                        <span [class]="'relative inline-flex rounded-full h-2 w-2 bg-' + cat.colorClass + '-500'"></span>
+                      </span>
+                    </div>
+
+                    <!-- Tags de Skills con microinteracciones de escala -->
+                    <div class="flex flex-wrap gap-2">
+                      @for (skill of cat.skills; track skill) {
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-950/80 hover:bg-slate-900 text-slate-300 hover:text-white text-xs font-mono rounded-xl border border-white/5 hover:border-white/10 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 cursor-default">
+                 
+                          <span [class]="'w-1 h-1 rounded-full bg-' + cat.colorClass + '-400'"></span>
+                          {{ skill }}
+                        </span>
+                      }
+                    </div>
+                  </div>
+                </div>
+              }
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>

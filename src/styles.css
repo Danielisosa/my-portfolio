@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+/* Estilos globales rápidos */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a; /* Slate 900 de Tailwind (Modo oscuro por defecto) */
+  color: #f8fafc; /* Slate 50 */
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
