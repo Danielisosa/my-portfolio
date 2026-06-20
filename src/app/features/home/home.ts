@@ -2,10 +2,11 @@ import { Component, computed, signal } from '@angular/core';
 import { Projects } from "../projects/projects";
 import { About } from "../about/about";
 import { Contact } from '../contact/contact';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [Projects, About, Contact],
+  imports: [Projects, About, Contact, CommonModule],
   templateUrl: './home.html',
   styleUrls: [`./home.css`],
 })
@@ -39,7 +40,7 @@ export class Home {
       let typingSpeed = this.isDeleting ? 50 : 100;
 
       if (!this.isDeleting && this.charIndex === currentFullText.length) {
-        typingSpeed = 2000; 
+        typingSpeed = 2000;
         this.isDeleting = true;
       } else if (this.isDeleting && this.charIndex === 0) {
         this.isDeleting = false;
@@ -53,38 +54,38 @@ export class Home {
     this.typingTimer = setTimeout(handleTyping, 500);
   }
 
-  
+
   terminalOutput = computed(() => {
     switch (this.activeTab()) {
       case 'info':
         return `{
-  "nombre": "Danieli",
-  "rol": "Frontend Engineer",
-  "experiencia": "+3 años",
-  "foco_actual": "Angular 21 Standalone & SSR",
-  "metodologia": "Clean Architecture & SOLID"
-}`;
+          "nombre": "Danieli",
+          "rol": "Frontend Engineer",
+          "experiencia": "+3 años",
+          "foco_actual": "Angular 21 Standalone & SSR",
+          "metodologia": "Clean Architecture & SOLID"
+        }`;
       case 'stack':
         return `[SYSTEM]: Cargando Stack de Tecnologías...
----------------------------------------------
-- Framework:   Angular 21 (Signals, SSR)
-- Lenguajes:   TypeScript, JavaScript (ES6+)
-- Estilos:     Tailwind CSS v4, SASS/CSS3
-- Testing:     Vitest, Jasmine
-- Backend:     Node.js, Express, Docker
-- Workflow:    Git, GitHub (CI/CD Concepts)`;
+        ---------------------------------------------
+        - Framework:   Angular 21 (Signals, SSR)
+        - Lenguajes:   TypeScript, JavaScript (ES6+)
+        - Estilos:     Tailwind CSS v4, SASS/CSS3
+        - Testing:     Vitest, Jasmine
+        - Backend:     Node.js, Express, Docker
+        - Workflow:    Git, GitHub (CI/CD Concepts)`;
       case 'tests':
         return `✔ test/components/header.spec.ts (3)
-✔ test/services/state.spec.ts (5)
-✔ test/features/pokeapi.spec.ts (12)
-✔ test/features/tesloshop.spec.ts (8)
+        ✔ test/services/state.spec.ts (5)
+        ✔ test/features/pokeapi.spec.ts (12)
+        ✔ test/features/tesloshop.spec.ts (8)
 
-Test Files  4 passed (4)
-Tests       28 passed (28)
-Time        1.42s (using Vitest)
-Coverage    87.4% (SOLID Architecture verified)
----------------------------------------------
-[STATUS]: ALL SYSTEMS OPERATIONAL (100% GREEN)`;
+        Test Files  4 passed (4)
+        Tests       28 passed (28)
+        Time        1.42s (using Vitest)
+        Coverage    87.4% (SOLID Architecture verified)
+        ---------------------------------------------
+        [STATUS]: ALL SYSTEMS OPERATIONAL (100% GREEN)`;
     }
   });
 

@@ -1,59 +1,87 @@
-# PortfolioFrontend
+# 🪐 Danieli.dev — Professional Frontend Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.3.
+Este repositorio contiene el código fuente de mi portafolio web profesional. Está diseñado y desarrollado bajo una arquitectura moderna, modular y limpia, utilizando el ecosistema más reciente de Angular 21 junto con técnicas avanzadas de reactividad y rendimiento del lado del servidor.
 
-## Development server
+## Demo en Vivo: 
+Ingresa aquí al portafolio en producción
 
-To start a local development server, run:
+
+## 🛠️ Stack Tecnológico
+
+Framework: Angular 21 (Componentes Standalone)
+
+Gestión de Estado: Angular Signals (Reactividad fina y predecible)
+
+Renderizado: SSR (Server-Side Rendering) e Hidratación para optimización de SEO y velocidad de carga (FCP)
+
+Estilos: Tailwind CSS v4 (Efectos Synthwave, Glassmorphism y diseño responsivo)
+
+Herramientas de Construcción: Vite / Esbuild nativos de Angular 21
+
+## 📐 Decisiones de Arquitectura y Buenas Prácticas
+
+Modularidad Limpia: Estructuración de carpetas basada en dominios de negocio e infraestructura (core, shared, layout, features), evitando el acoplamiento y facilitando la mantenibilidad.
+
+Control Flow Nativo: Implementación del nuevo flujo de control de Angular (@if / @else) para optimizar el rendimiento de renderizado en el cliente.
+
+Inyección de Dependencias Moderna: Uso prioritario de la función inject() sobre la inyección tradicional por constructor, reduciendo el acoplamiento de clases y mejorando el testing.
+
+SOLID & Clean Code: Clases enfocadas en la responsabilidad única (Single Responsibility), modularidad en componentes compartidos y código auto-explicativo libre de deuda técnica.
+
+## 💻 Proyectos Destacados Presentados
+
+1. DashStore (Dashboard de Inventario Reactivo)
+
+Descripción: Panel de administración para e-commerce enfocado en el manejo de prendas.
+
+Ingeniería: Operaciones CRUD completas (creación, edición, visualización) integradas con APIs RESTful, estructuradas de forma síncrona y reactiva utilizando Signals para la gestión de estados.
+
+2. PokéAPI Pro (Explorador Avanzado de Pokémon)
+
+Descripción: Aplicación de consumo de datos masivos optimizada para rendimiento extremo.
+
+Ingeniería: Configurada bajo Server-Side Rendering (SSR) para asegurar un indexado de SEO perfecto. Cuenta con una cobertura de pruebas unitarias robustas utilizando herramientas de última generación.
+
+## ⚡ Guía de Instalación y Ejecución Local
+
+Si deseas clonar este proyecto y ejecutarlo en tu entorno local, asegúrate de tener instalado Node.js (versión 20 o superior).
+
+Clonar el repositorio:
 
 ```bash
-ng serve
+git clone [https://github.com/Danielisosa/my-portfolio.git](https://github.com/Danielisosa/my-portfolio.git)
+cd my-portfolio
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Instalar dependencias:
+```bash
+npm install
+```
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Iniciar el servidor de desarrollo en caliente (Hot Reload):
 
 ```bash
-ng generate component component-name
+npm run start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Iniciar con Server-Side Rendering (SSR) activo en entorno local:
 
 ```bash
-ng generate --help
+npm run dev:ssr
 ```
 
-## Building
 
-To build the project run:
+Compilar para producción (SSR optimizado):
 
 ```bash
-ng build
+npm run build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## ✉️ Contacto e Información Profesional
 
-## Running unit tests
+Ubicación: Cabudare, Lara, Venezuela (Disponible para presencial en Lara y trabajo remoto)
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+LinkedIn: linkedin.com/in/danieli-sosa-a8781114a
 
-```bash
-ng test
-```
+Email: danielisosa.0512@gmail.com
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
