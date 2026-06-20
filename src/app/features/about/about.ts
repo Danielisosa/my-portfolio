@@ -26,7 +26,9 @@ interface SkillCategory {
     .hover-glow-violet:hover {
       box-shadow: 0 0 30px rgba(139, 92, 246, 0.15);
     }
-
+    .hover-glow-amber:hover {
+      box-shadow: 0 0 30px rgba(245, 158, 11, 0.15);
+    }
     /* Animación de pulso lento para las esferas de fondo */
     @keyframes pulseSlow {
       0%, 100% { opacity: 0.4; transform: scale(1); }
@@ -40,6 +42,7 @@ interface SkillCategory {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class About {
+  cvPath = signal('docs/CV_Danieli_Sosa.pdf');
   skillCategories = signal<SkillCategory[]>([
     {
       title: 'Frontend Core (Dominio & Especialización)',
@@ -50,7 +53,7 @@ export class About {
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
         </svg>
       `,
-      skills: ['AngularJS (3.5+ Years)', 'Angular 21 (Modern Study)', 'TypeScript', 'Signals (State)', 'Tailwind CSS v4', 'SASS / CSS3', 'JavaScript (ES6+)', 'HTML5 / DOM']
+      skills: ['AngularJS (3.5+ Years)', 'Angular 21 (Modern Study)', 'TypeScript', 'Signals (State)', 'Tailwind CSS v4', 'SASS / CSS3', 'Bootstrap','JavaScript (ES6+)', 'HTML5 / DOM']
     },
     {
       title: 'Testing & Quality Assurance',
@@ -74,6 +77,17 @@ export class About {
         </svg>
       `,
       skills: ['Git / GitHub', 'GitLab / Bitbucket', 'Docker (Local Env)', 'Netlify (Deploy)', 'REST APIs Integration']
+    },
+    {
+      title: 'Metodologías Ágiles',
+      colorClass: 'amber',
+      glowShadow: 'hover-glow-amber',
+      icon: `
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      `,
+      skills: ['SCRUM', 'Agile Ceremonies (Daily, Sprint)']
     }
   ]);
 }

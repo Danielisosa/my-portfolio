@@ -22,7 +22,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
           <!-- Redes Sociales Profesionales -->
           <div class="flex items-center gap-6">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://linkedin.com/in/danieli-sosa-a8781114a" target="_blank" rel="noopener noreferrer"
                class="text-slate-400 hover:text-fuchsia-400 transition-colors p-2 rounded-lg hover:bg-white/5"
                aria-label="LinkedIn">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -30,7 +30,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
               </svg>
             </a>
 
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/Danielisosa" target="_blank" rel="noopener noreferrer"
                class="text-slate-400 hover:text-fuchsia-400 transition-colors p-2 rounded-lg hover:bg-white/5"
                aria-label="GitHub">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -38,7 +38,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
               </svg>
             </a>
 
-            <a href="mailto:danieli@example.com"
+            <a href="mailto:danielisosa.0512@gmail.com"
                class="text-slate-400 hover:text-fuchsia-400 transition-colors p-2 rounded-lg hover:bg-white/5"
                aria-label="Email">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
