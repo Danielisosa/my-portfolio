@@ -3,7 +3,8 @@
 Este repositorio contiene el código fuente de mi portafolio web profesional. Está diseñado y desarrollado bajo una arquitectura moderna, modular y limpia, utilizando el ecosistema más reciente de Angular 21 junto con técnicas avanzadas de reactividad y rendimiento del lado del servidor.
 
 ## Demo en Vivo: 
-Ingresa aquí al portafolio en producción
+El proyecto se encuentra desplegado y en vivo en el siguiente enlace:
+
 [![Deploy con Netlify](https://img.shields.io/badge/Netlify-Live_Demo-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://my-portfolio-danieli.netlify.app/)
 
 
