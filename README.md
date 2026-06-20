@@ -4,6 +4,7 @@ Este repositorio contiene el código fuente de mi portafolio web profesional. Es
 
 ## Demo en Vivo: 
 Ingresa aquí al portafolio en producción
+[![Deploy con Netlify](https://img.shields.io/badge/Netlify-Live_Demo-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://my-portfolio-danieli.netlify.app/)
 
 
 ## 🛠️ Stack Tecnológico
